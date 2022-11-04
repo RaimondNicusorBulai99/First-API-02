@@ -6,11 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-<<<<<<< HEAD
 @RequestMapping("/factorial")
-=======
-@RequestMapping ("/factorial")
->>>>>>> origin/master
 public class FactorialController {
 
     @GetMapping("/{n}")
@@ -20,11 +16,7 @@ public class FactorialController {
             factorial = 0;
         } else {
             for (int i = 0; i < n; ++i) {
-<<<<<<< HEAD
                 factorial *= (i + 1);
-=======
-                factorial *= (i+1);
->>>>>>> origin/master
             }
         }
         return factorial;
